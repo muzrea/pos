@@ -1,0 +1,28 @@
+1.查找购物车中的商品信息//预计：10min
+input:	givenArray:[string]，
+	item:[
+	{barcode: string, name: string,unit: string,price: number,}
+	]
+output:	requiredItem:[
+	{barcode: string, name: string,unit: string,price: number,}
+	]
+
+2.计算每一个相同商品的数量//预计：6min
+input:	givenArray:[string]
+output:	countItem:[[string],[number]]
+
+3.计算小计//预计：6min
+input:	countItem:[[string],[number]],requiredItem:[
+	{barcode: string, name: string,unit: string,price: number,}
+	]
+output:	countItem:[[string],[number],[number]]
+
+4.计算总计//预计：3min
+input: countItem:[[string],[number],[number]]
+output:	totalPrice:number
+
+5.打印itemList//预计：6min
+input: countItem:[[string],[number],[number]],requiredItem:[
+	{barcode: string, name: string,unit: string,price: number,}
+	],totalPrice:number
+output:	itemList
