@@ -1,0 +1,36 @@
+1.判断商品的数量//预计15min
+输入：	barcodeArr:[string]
+输出：	goods:[{barcode:'',count:0}]
+2.添加商品信息//预计：6min 
+input:	barcodeArr:[string]
+	item:[
+	{barcode: string, name: string,unit: string,price: number,}
+	]
+output:	goods:[
+	{barcode: string,count:number, name: string,unit: string,price: number,}
+	]
+3.计算小计//预计：6min
+input:	goods:[
+	{barcode: string,count:number, name: string,unit: string,price: number,}
+	]
+output:	goods:[
+	{barcode: string,count:number, name: string,unit: string,price: number,cost:number}
+	]
+
+4.计算总计//预计：3min
+input: goods:[
+	{barcode: string,count:number, name: string,unit: string,price: number,cost:number}
+	]
+output:	totalCost:number
+
+5.计算节省金额//预计：5min
+input: goods:[
+	{barcode: string,count:number, name: string,unit: string,price: number,cost:number}
+	]
+output:	save:number
+
+5.打印itemList//预计：6min
+input: countItem:[[string],[number],[number]],requiredItem:[
+	{barcode: string, name: string,unit: string,price: number,}
+	],totalPrice:number
+output:	itemList
